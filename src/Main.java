@@ -1,15 +1,36 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+import br.com.dio.desafio.dominio.Curso;
+import br.com.dio.desafio.dominio.Mentoria;
+
+import javax.sound.midi.Soundbank;
+import java.time.LocalDate;
+
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+    Curso curso1 = new Curso();
+    curso1.setTitulo("Java Básico");
+    curso1.setDescricao("Aprenda os conceitos básicos de Java");
+    curso1.setCargaHoraria(8);
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        Curso curso2 = new Curso();
+        curso2.setTitulo("Python Básico");
+        curso2.setDescricao("Aprenda os conceitos básicos de Python");
+        curso2.setCargaHoraria(8);
+
+        Mentoria mentoria = new Mentoria();
+        mentoria.setTitutlo("Como ser um programador Java");
+        mentoria.setDescricao("Imersão total ao mundo da programação Java");
+        mentoria.setData(LocalDate.now());
+
+        Mentoria mentoria2 = new Mentoria();
+        mentoria2.setTitutlo("Como ser um programador Python");
+        mentoria2.setDescricao("Imersão total ao mundo da programação Python");
+        mentoria2.setData(LocalDate.now());
+
+    System.out.println(curso1);
+    System.out.println(curso2);
+    System.out.println(mentoria);
+    System.out.println(mentoria2);
     }
 }
